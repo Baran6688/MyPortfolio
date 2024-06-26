@@ -16,19 +16,19 @@ export default function Intro() {
         y: 0,
         transition: { type: "tween", delay: 1 },
       }}
-      className="flex scroll-mt-20 flex-col items-center justify-center 2xl:gap-12"
+      className="flex scroll-mt-20 flex-col items-center justify-center xl:gap-12"
       id="home"
     >
       <h1 className="text-7xl font-bold">
-        <HackerTextEffect className="text-4xl 2xl:text-7xl 2xl:font-bold">
+        <HackerTextEffect className="text-4xl xl:text-7xl xl:font-bold">
           Hello, Friend.
         </HackerTextEffect>
       </h1>
-      <div className="mt-16 h-full 2xl:mt-20">
-        <p className=" text-pretty text-justify text-2xl font-semibold leading-10 2xl:text-5xl 2xl:tracking-widest">
+      <div className="mt-16 h-full xl:mt-20">
+        <p className=" text-pretty text-justify text-2xl font-semibold leading-10 xl:text-5xl xl:tracking-widest">
           I'm <span className="font-extrabold">Barham</span>, a web developer
           with a knack for crafting visually{" "}
-          <HackerTextEffect className="text-2xl font-extrabold 2xl:text-5xl">
+          <HackerTextEffect className="text-2xl font-extrabold xl:text-5xl">
             appealing
           </HackerTextEffect>{" "}
           and efficient websites. I merge technology and{" "}
@@ -36,7 +36,7 @@ export default function Intro() {
           innovative digital solutions.{" "}
         </p>
 
-        <div className=" flex flex-col items-start gap-2 py-10 2xl:hidden">
+        <div className=" flex flex-col items-start gap-2 py-10 xl:hidden">
           <div className="mt-4 flex gap-4">
             <div className="my-2 flex gap-4">
               {socials.map((social) => (

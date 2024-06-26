@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export default function HeaderSection({ children }: { children: string }) {
   return (
     <motion.h2
-      className="text-center text-4xl 2xl:text-6xl 2xl:font-extrabold"
+      className="text-center text-4xl xl:text-6xl xl:font-extrabold"
       initial={{ x: -200 }}
       whileInView={{
         x: 0,
