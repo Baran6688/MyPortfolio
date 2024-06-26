@@ -6,10 +6,10 @@ export default function Skills() {
   return (
     <section
       id="skills"
-      className=" flex scroll-mt-20 flex-col gap-8 md:gap-20 "
+      className=" flex scroll-mt-20 flex-col gap-8 2xl:gap-20 "
     >
       <HeaderSection>Skills</HeaderSection>
-      <ul className="flex flex-wrap justify-center gap-4 md:gap-8">
+      <ul className="flex flex-wrap justify-center gap-4 2xl:gap-8">
         {skills.map((skill, index) => (
           <AnimatedList key={skill.name} index={index}>
             {skill.icon}

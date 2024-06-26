@@ -16,10 +16,10 @@ export default function Sidebar() {
         type: "tween",
         duration: 0.4,
       }}
-      className="fixed left-0 top-0 z-10 flex w-screen flex-wrap justify-around border-b-2 border-b-primary/20 bg-white dark:bg-[#09090b] md:h-full md:w-1/5 md:flex-col md:flex-nowrap md:gap-4 md:border-r md:border-r-primary/20 md:py-10"
+      className="fixed left-0 top-0 z-10 flex w-screen flex-wrap justify-around border-b-2 border-b-primary/20 bg-white dark:bg-[#09090b] 2xl:static 2xl:h-screen 2xl:w-[400px] 2xl:flex-col 2xl:flex-nowrap 2xl:gap-4 2xl:border-r 2xl:border-r-primary/20 2xl:py-10"
     >
-      <div className="hidden md:flex md:h-1/5 md:flex-col md:items-center md:justify-center ">
-        <span className="font-bold  md:text-xl">Barham Khalid</span>
+      <div className="hidden 2xl:flex 2xl:h-1/5 2xl:flex-col 2xl:items-center 2xl:justify-center ">
+        <span className="font-bold  2xl:text-xl">Barham Khalid</span>
         <span className="text-lg opacity-45">Web Developer</span>
         <span className="flex items-center gap-2 text-lg opacity-45">
           Sulaymaniah
@@ -37,19 +37,19 @@ export default function Sidebar() {
           ))}
         </div>
       </div>
-      <div className="flex flex-wrap items-center justify-center gap-2 p-2 md:h-3/5 md:flex-col md:flex-nowrap md:items-center md:gap-4 md:p-0">
+      <div className="flex flex-wrap items-center justify-center gap-2 p-2 2xl:h-3/5 2xl:flex-col 2xl:flex-nowrap 2xl:items-center 2xl:gap-4 2xl:p-0">
         {sections.map((section) => (
           <Link
             href={section.ref}
-            className=" flex items-center rounded-md bg-secondary/80 p-2 text-xl font-bold transition-all hover:bg-secondary/50 md:w-5/6 md:justify-center md:gap-2  "
+            className=" flex items-center rounded-2xl bg-secondary/80 p-2 text-xl font-bold transition-all hover:bg-secondary/50 2xl:w-5/6 2xl:justify-center 2xl:gap-2  "
             key={section.name}
           >
             {section.icon}
-            <span className="hidden md:block">{section.name}</span>
+            <span className="hidden 2xl:block">{section.name}</span>
           </Link>
         ))}
       </div>
-      <div className="flex items-center md:relative md:h-1/5 md:flex-col md:justify-end">
+      <div className="flex items-center 2xl:relative 2xl:h-1/5 2xl:flex-col 2xl:justify-end">
         <ModeToggle />
       </div>
     </motion.div>

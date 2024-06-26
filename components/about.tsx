@@ -26,7 +26,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className=" flex scroll-mt-20 flex-col gap-8 md:scroll-mt-12 md:gap-20"
+      className=" flex scroll-mt-20 flex-col gap-8 2xl:scroll-mt-12 2xl:gap-20"
     >
       <HeaderSection>About</HeaderSection>
       <motion.ul
@@ -36,7 +36,7 @@ export default function About() {
         viewport={{
           once: true,
         }}
-        className="flex flex-col gap-4 text-justify text-xl font-semibold tracking-tight md:gap-8 md:text-4xl md:tracking-normal"
+        className="flex flex-col gap-4 text-justify text-xl font-semibold tracking-tight 2xl:gap-8 2xl:text-4xl 2xl:tracking-normal"
       >
         {abouts.map((about, index) => (
           <motion.li variants={item} key={index}>

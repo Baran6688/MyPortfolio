@@ -3,7 +3,11 @@ import { ThemeProvider } from "@/components/theme-provider";
 import type { Metadata } from "next";
 import "./globals.css";
 import { Toaster } from "@/components/ui/sonner";
+import { Raleway } from "next/font/google";
 
+const raleway = Raleway({
+  subsets: ["cyrillic"],
+});
 export const metadata: Metadata = {
   title: "Barham Khalid",
   description: "Portfolio",
@@ -18,14 +22,14 @@ export default function RootLayout({
     <>
       <html lang="en" suppressHydrationWarning>
         <head />
-        <body className="selection:bg-primary/10">
+        <body className={`selection:bg-primary/10 ${raleway.className}`}>
           <ThemeProvider
             attribute="class"
             defaultTheme="system"
             enableSystem
             disableTransitionOnChange
           >
-            <div className="relative flex w-full justify-center">
+            <div className="relative flex justify-start">
               <Sidebar />
               {children}
               <Toaster />

@@ -12,7 +12,7 @@ import { toast } from "sonner";
 export default function Contact() {
   return (
     <section
-      className="flex scroll-mt-24 flex-col justify-start gap-4 md:scroll-mt-12"
+      className="flex scroll-mt-24 flex-col justify-start gap-4 2xl:scroll-mt-12"
       id="contact"
     >
       <HeaderSection>Contact Me</HeaderSection>
