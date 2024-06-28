@@ -76,7 +76,6 @@
 }
 
 html {
-  font-family: "Raleway";
   @apply !scroll-smooth;
 }
 

@@ -22,18 +22,18 @@ export default function RootLayout({
     <>
       <html lang="en" suppressHydrationWarning>
         <head />
-        <body className={`selection:bg-primary/10 ${raleway.className}`}>
+        <body
+          className={`selection:bg-primary/10 ${raleway.className} relative flex justify-start`}
+        >
           <ThemeProvider
             attribute="class"
             defaultTheme="system"
             enableSystem
             disableTransitionOnChange
           >
-            <div className="relative flex justify-start">
-              <Sidebar />
-              {children}
-              <Toaster />
-            </div>
+            <Sidebar />
+            {children}
+            <Toaster />
           </ThemeProvider>
         </body>
       </html>
